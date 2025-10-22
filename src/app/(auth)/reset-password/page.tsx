@@ -35,7 +35,7 @@ const formSchema = z
     message: "Password and confirm password must be same",
     path: ["confirmPassword"],
   });
-
+export const dynamic = "force-dynamic";
 const ResetPassword = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

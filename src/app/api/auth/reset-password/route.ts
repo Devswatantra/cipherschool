@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/config/connectDB";
 import UserModel from "@/models/User";
 import bcrypt from "bcryptjs";
-export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   try {
